@@ -1,4 +1,4 @@
-##Here is a questionnaire component written in Vue
+## Here is a questionnaire component written in Vue  
 You just need to pass the data of the problem to the component, which will automatically generate the questionnaire for you.  
 For example:  
 <img src="./img/1.png" width="800px" height="800px" />
