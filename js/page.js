@@ -32,6 +32,7 @@ Vue.component('question-page', {
     `,
     methods: {
         last(){
+            this.callSonFun('getResult');
             this.index--;
             var index = this.isComtaint(this.questionList[this.index].id);
             var answer = this.answers[index] ? this.answers[index].answer : [];

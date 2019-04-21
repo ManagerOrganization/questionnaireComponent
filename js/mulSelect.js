@@ -21,7 +21,7 @@ Vue.component('multiply-select', {
             this.$parent.setResult(this.result);
         },
         reset(){
-            this.result = '';
+            this.result = [];
             this.$parent.setResult(this.result);
         },
         setResult(result){
