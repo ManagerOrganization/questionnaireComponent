@@ -3,7 +3,7 @@ Vue.component('single-select', {
     template: `
     <ul>
         <li v-for="(content,index) in chooses">
-            <input type="radio" v-model="result" :id="index" :value="getChar(index)"/>
+            <input type="radio" v-model="result" :id="index" :value="getCharOrder(index)"/>
             <label :for="index">{{ content }}</label>
         </li>
     </ul>
@@ -14,8 +14,11 @@ Vue.component('single-select', {
         }
     },
     methods: {
-        getChar(index){
+        getCharOrder(index){
             return String.fromCharCode(65 + index);
+        },
+        getNumberOrder(index){
+            return index;
         },
         getResult(){
             this.$parent.setResult(this.result);

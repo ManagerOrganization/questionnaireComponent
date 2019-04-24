@@ -14,8 +14,11 @@ Vue.component('multiply-select', {
         }
     },
     methods: {
-        getChar(index){
+        getCharOrder(index){
             return String.fromCharCode(65 + index);
+        },
+        getNumberOrder(index){
+            return index;
         },
         getResult(){
             this.$parent.setResult(this.result);

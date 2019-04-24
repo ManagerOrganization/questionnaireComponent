@@ -7,4 +7,7 @@ You'll get a questionnaire of your incoming data.
 <img src="./img/3.png" width="800px" height="200px" />
 <img src="./img/4.png" width="800px" height="300px" />  
 Of course, an important problem is that only one question is displayed at a time, and you can switch the topic by clicking on the last one or the next one.  
->This component can only generate three types of questions, single-choice questions, multiple-choice questions and short-answer questions, each corresponding to the type of 0, 1, 2, respectively.If necessary, you can customize the data.
+>This component can only generate three types of questions, single-choice questions, multiple-choice questions and short-answer questions, each corresponding to the type of 0, 1, 2, respectively.If necessary, you can customize the data.  
+
+If you need to add an option number, such as A, B, C, you just need to add a code in the single-choice and multiple-choice components before the sixth line input tag.  
+<code>{{ getCharOrder(index) }}</code> or <code>{{ getNumberOrder(index) }}</code>
